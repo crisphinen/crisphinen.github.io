@@ -12,10 +12,6 @@ I am advised by Prof. Ning Weng .
 ### Projects
 my projects and about me can be found in the link below: https://crisphinen.github.io/portfolio/
 
-- **Description:** Briefly describe the project, its purpose, and the technologies used.
-- **Link:** [Link to the project (if available)].
-- **Demo:** [Link to a live demo (if available)].
-- **Repository:** [Link to the GitHub repository].
 
 
 ## Skills
