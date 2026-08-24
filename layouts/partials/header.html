@@ -1,0 +1,34 @@
+<div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+          {{ with .Site.Params.logo }}
+            <img src="{{ . | absURL }}" alt="logo">
+          {{ end }}
+          {{ .Site.Title }}
+        </a>
+        <div class="navbar-nav flex-row flex-nowrap justify-content-center">
+            {{ with .Site.Menus.main }}
+                {{ $navbar_len := len . }}
+                {{ range $i, $nav_item := . }}
+                    <a class="nav-item nav-link" href="{{ $nav_item.URL | relURL }}" title="{{ $nav_item.Name }}">
+                        {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </nav>
+    <div class="header-links">
+        <a href="mailto:c.ngari@siu.edu">Email</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/crisphinen" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="sep">|</span>
+        <a href="{{ .Site.BaseURL }}">Portfolio</a>
+        <span class="sep">|</span>
+        <a href="https://www.linkedin.com/in/crisphine-ngari-a73016204/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="sep">|</span>
+        <a href="https://orcid.org/0009-0005-7834-5521" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <span class="sep">|</span>
+        <a href="{{ "Crisphine_Resume.pdf" | absURL }}" target="_blank" rel="noopener noreferrer">CV</a>
+    </div>
+</div>
+<hr>

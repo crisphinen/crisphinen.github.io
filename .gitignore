@@ -1,0 +1,9 @@
+public/
+resources/
+.hugo_build.lock
+*.Zone.Identifier
+
+.ipynb_checkpoints/
+cv/*.aux
+cv/*.log
+cv/*.out
